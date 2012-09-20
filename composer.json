@@ -1,5 +1,5 @@
 {
-    "name": "aura/system-installer",
+    "name": "aura/installer-system",
     "type": "composer-installer",
     "license": "BSD",
     "description": "Installs Aura packages to the Aura system \"package\" directory.",
