@@ -1,0 +1,34 @@
+{
+    "name": "aura/system-installer",
+    "type": "composer-installer",
+    "license": "BSD",
+    "description": "Installs Aura packages to the Aura system \"package\" directory.",
+    "replace" : {
+        "aura/default-installer" : "*"
+    },
+    "minimum-stability": "dev",
+    "keywords": ["aura", "installer"],
+    "authors": [
+        {
+            "name": "Kyle Robinson Young",
+            "email": "kyle@dontkry.com",
+            "homepage": "https://github.com/shama"
+        },
+        {
+            "name": "Paul M. Jones",
+            "email": "pmjones88@gmail.com",
+            "homepage": "http://paul-m-jones.com"
+        }
+    ],
+    "require-dev": {
+        "composer/composer": "1.0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Aura\\Composer\\": "src/"
+        }
+    },
+    "extra" : {
+        "class" : "Aura\\Composer\\SystemInstaller"
+    }
+}
