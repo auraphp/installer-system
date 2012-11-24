@@ -81,9 +81,13 @@ class SystemInstaller extends LibraryInstaller
     {
         // system/vendor/aura/installer-system/src/Aura/Composer/SystemInstaller.php
         $root = dirname(dirname(dirname(dirname(dirname(dirname(dirname(__DIR__)))))));
-        return $root . DIRECTORY_SEPARATOR
-             . 'config' . DIRECTORY_SEPARATOR
-             . '_packages';
+        $file = $root . DIRECTORY_SEPARATOR
+              . 'config' . DIRECTORY_SEPARATOR
+              . '_packages';
+        if (! file_exists($file)) {
+            touch($file);
+        }
+        return $file;
     }
     
     /**
