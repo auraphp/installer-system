@@ -21,7 +21,8 @@
         }
     ],
     "require-dev": {
-        "composer/composer": "1.0.*"
+        "composer/composer": "1.0.*",
+        "mikey179/vfsStream": "1.1.*"
     },
     "autoload": {
         "psr-0": {
