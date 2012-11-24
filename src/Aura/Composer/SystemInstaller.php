@@ -81,7 +81,7 @@ class SystemInstaller extends LibraryInstaller
     {
         // system/vendor/aura/installer-system/src/Aura/Composer/SystemInstaller.php
         $root = dirname(dirname(dirname(dirname(dirname(dirname(dirname(__DIR__)))))));
-        return $root . DIRECTORY_SEPARATOR 
+        return $root . DIRECTORY_SEPARATOR
              . 'config' . DIRECTORY_SEPARATOR
              . '_packages';
     }
@@ -95,7 +95,7 @@ class SystemInstaller extends LibraryInstaller
      */
     private function readConfigPackages()
     {
-        $packages = file($this->getConfigPackagesFilePath());
+        $packages = file($this->getConfigPackagesFile());
         array_walk($packages, 'trim');
         return $packages;
     }
@@ -112,7 +112,7 @@ class SystemInstaller extends LibraryInstaller
     private function writeConfigPackages(array $packages)
     {
         $text = implode(PHP_EOL, $packages) . PHP_EOL;
-        file_put_contents($this->getConfigPackagesFilePath(), $text);
+        file_put_contents($this->getConfigPackagesFile(), $text);
     }
     
     /**
