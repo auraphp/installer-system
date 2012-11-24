@@ -4,7 +4,7 @@
     "license": "BSD",
     "description": "Installs Aura packages to the Aura system \"package\" directory.",
     "replace" : {
-        "aura/default-installer" : "*"
+        "aura/installer-default" : "*"
     },
     "minimum-stability": "dev",
     "keywords": ["aura", "installer"],
