@@ -1,8 +1,9 @@
 <?php
 namespace Aura\Composer;
 
-use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
+use Composer\Package\PackageInterface;
+use Composer\Repository\InstalledRepositoryInterface;
 
 class SystemInstaller extends LibraryInstaller
 {
