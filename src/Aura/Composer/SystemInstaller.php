@@ -100,7 +100,10 @@ class SystemInstaller extends LibraryInstaller
     private function readConfigPackages()
     {
         $packages = file($this->getConfigPackagesFile());
-        array_walk($packages, 'trim');
+        $trim = function (&$text) {
+            $text = trim($text);
+        };
+        array_walk($packages, $trim);
         return $packages;
     }
     
