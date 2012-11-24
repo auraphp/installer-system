@@ -80,7 +80,7 @@ class SystemInstaller extends LibraryInstaller
     private function getConfigPackagesFile()
     {
         // system/vendor/aura/installer-system/src/Aura/Composer/SystemInstaller.php
-        $root = dirname(dirname(dirname(dirname(dirname(dirname(dirname(__DIR__)))))));
+        $root = dirname(dirname(dirname(dirname(dirname(dirname(__DIR__))))));
         $file = $root . DIRECTORY_SEPARATOR
               . 'config' . DIRECTORY_SEPARATOR
               . '_packages';
