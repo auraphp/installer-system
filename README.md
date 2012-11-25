@@ -25,9 +25,9 @@ After you clone this repository ...
 
 0.  [Install PHPUnit.](http://www.phpunit.de/manual/current/en/installation.html)
 
-1.  Change to the `auraphp/system-installer` directory and install Composer:
+1.  Change to the `installer-system` directory and install Composer:
 
-        $ cd /path/to/auraphp/system-installer
+        $ cd /path/to/installer-system
         $ curl -s https://getcomposer.org/installer | php
 
 2.  Run Composer to install the development requirements:
