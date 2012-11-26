@@ -1,7 +1,8 @@
 {
     "name": "aura/installer-system",
+    "version": "1.0.0",
     "type": "composer-installer",
-    "license": "BSD",
+    "license": "BSD-2-Clause",
     "description": "Installs Aura packages to the Aura system \"package\" directory.",
     "replace" : {
         "aura/installer-default" : "*"
