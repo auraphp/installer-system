@@ -142,7 +142,7 @@ class SystemInstaller extends LibraryInstaller
     
     /**
      * 
-     * Converts "this_text" to "ThisText".
+     * Converts "this-text" to "ThisText".
      * 
      * @param string $text The string to convert.
      * 
@@ -151,7 +151,7 @@ class SystemInstaller extends LibraryInstaller
      */
     private function ucSnakeWords($text)
     {
-        $text = str_replace('_', ' ', $text);
+        $text = str_replace('-', ' ', $text);
         $text = ucwords($text);
         return str_replace(' ', '_', $text);
     }
