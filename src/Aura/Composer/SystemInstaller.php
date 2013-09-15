@@ -151,7 +151,7 @@ class SystemInstaller extends LibraryInstaller
     
     /**
      * 
-     * Converts "this-text" to "ThisText".
+     * Converts "this-text" to "This_Text".
      * 
      * @param string $text The string to convert.
      * 
