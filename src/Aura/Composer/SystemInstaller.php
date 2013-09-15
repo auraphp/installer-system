@@ -65,6 +65,15 @@ class SystemInstaller extends LibraryInstaller
     /**
      * {@inheritDoc}
      */
+    public function getPackageBasePath(PackageInterface $package)
+    {
+        list($vendor, $name) = $this->getVendorAndName($package);
+        return "package/{$vendor}.{$name}";
+    }
+    
+    /**
+     * {@inheritDoc}
+     */
     public function supports($packageType)
     {
         return $packageType == 'aura-package';
