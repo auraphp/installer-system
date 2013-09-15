@@ -23,16 +23,11 @@ Running the Tests
 
 After you clone this repository ...
 
-0.  [Install PHPUnit.](http://www.phpunit.de/manual/current/en/installation.html)
-
-1.  Change to the `installer-system` directory and install Composer:
-
-        $ cd /path/to/installer-system
-        $ curl -s https://getcomposer.org/installer | php
+1.  Install PHPUnit and Composer.
 
 2.  Run Composer to install the development requirements:
 
-        $ php composer.phar install --dev
+        $ composer install --dev
         
 3.  Change to the `tests` directory and issue `phpunit`.
 
