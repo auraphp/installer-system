@@ -17,22 +17,3 @@ with Composer, and as such will be placed in `vendor` not `package`.
 
 [Composer]: http://getcomposer.org/
 [Aura system]: https://github.com/auraphp/system
-
-Running the Tests
------------------
-
-After you clone this repository ...
-
-0.  [Install PHPUnit.](http://www.phpunit.de/manual/current/en/installation.html)
-
-1.  Change to the `installer-system` directory and install Composer:
-
-        $ cd /path/to/installer-system
-        $ curl -s https://getcomposer.org/installer | php
-
-2.  Run Composer to install the development requirements:
-
-        $ php composer.phar install --dev
-        
-3.  Change to the `tests` directory and issue `phpunit`.
-
